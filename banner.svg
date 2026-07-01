@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260" role="img" aria-label="Vlad-Andrei Gruia — Full-Stack Developer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1a33"/>
+      <stop offset="55%" stop-color="#12294d"/>
+      <stop offset="100%" stop-color="#1f548f"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4da3ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7cc4ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#4da3ff" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      @keyframes drift { 0%{transform:translateX(-40px)} 50%{transform:translateX(40px)} 100%{transform:translateX(-40px)} }
+      @keyframes floaty { 0%{transform:translateY(0)} 50%{transform:translateY(-14px)} 100%{transform:translateY(0)} }
+      @keyframes floaty2 { 0%{transform:translateY(0)} 50%{transform:translateY(12px)} 100%{transform:translateY(0)} }
+      @keyframes twinkle { 0%,100%{opacity:.25} 50%{opacity:.9} }
+      @keyframes sweep { 0%{transform:translateX(-500px)} 100%{transform:translateX(1100px)} }
+      @keyframes grow { 0%{transform:scaleX(0)} 100%{transform:scaleX(1)} }
+      @keyframes fade { 0%{opacity:0} 100%{opacity:1} }
+      .name{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-weight:800;fill:#ffffff;font-size:52px;opacity:0;animation:fade .8s ease forwards .2s}
+      .role{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-weight:500;fill:#a9cdf5;font-size:23px;opacity:0;animation:fade .8s ease forwards .6s}
+      .tags{font-family:'Consolas','Courier New',monospace;fill:#7cc4ff;font-size:16px;opacity:0;animation:fade .8s ease forwards 1s}
+      .rule{transform-origin:left center;transform:scaleX(0);animation:grow .9s cubic-bezier(.2,.7,.3,1) forwards .7s}
+      .blob{animation:floaty 7s ease-in-out infinite}
+      .blob2{animation:floaty2 9s ease-in-out infinite}
+      .dot{animation:twinkle 3s ease-in-out infinite}
+      .layer{animation:drift 16s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="1000" height="260" rx="18" fill="url(#bg)"/>
+
+  <!-- soft floating blobs -->
+  <g class="layer" opacity="0.5">
+    <circle class="blob" cx="850" cy="70" r="90" fill="#2f6fb0" opacity="0.35"/>
+    <circle class="blob2" cx="930" cy="200" r="70" fill="#3f86d1" opacity="0.28"/>
+    <circle class="blob" cx="120" cy="210" r="60" fill="#2f6fb0" opacity="0.25"/>
+  </g>
+
+  <!-- twinkling dots -->
+  <g fill="#8fd0ff">
+    <circle class="dot" cx="700" cy="40" r="3" style="animation-delay:.0s"/>
+    <circle class="dot" cx="770" cy="120" r="2.5" style="animation-delay:.6s"/>
+    <circle class="dot" cx="640" cy="200" r="3" style="animation-delay:1.2s"/>
+    <circle class="dot" cx="900" cy="120" r="2.5" style="animation-delay:1.8s"/>
+    <circle class="dot" cx="820" cy="215" r="3" style="animation-delay:2.4s"/>
+  </g>
+
+  <!-- text -->
+  <text class="name" x="60" y="112">Vlad-Andrei Gruia</text>
+  <rect class="rule" x="62" y="130" width="360" height="3" rx="1.5" fill="#4da3ff"/>
+  <text class="role" x="62" y="168">Full-Stack Developer · frontend-strong, backend-growing</text>
+  <text class="tags" x="62" y="210">&lt;React /&gt;  &lt;TypeScript /&gt;  &lt;C# .NET /&gt;  &lt;PostgreSQL /&gt;</text>
+
+  <!-- light sweep -->
+  <g clip-path="url(#clip)">
+    <rect x="0" y="0" width="160" height="260" fill="url(#sheen)" opacity="0.5" style="animation:sweep 6s linear infinite 1.4s"/>
+  </g>
+  <clipPath id="clip"><rect width="1000" height="260" rx="18"/></clipPath>
+</svg>
