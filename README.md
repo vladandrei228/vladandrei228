@@ -65,13 +65,6 @@ Strongly-typed, chainable API for safe parameterized queries, published as a ver
 **Joker's Junction — Architecture study**
 Built monolithic and microservices versions of the same system to compare scalability and design trade-offs. *(.NET, gRPC, RabbitMQ, Kubernetes)*
 
-### 📊 GitHub in numbers
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=vladandrei228&show_icons=true&hide_border=true&title_color=1F548F&icon_color=1F548F&text_color=555&bg_color=00000000" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vladandrei228&layout=compact&hide_border=true&title_color=1F548F&text_color=555&bg_color=00000000" alt="Top languages" />
-</p>
-
 ---
 
 <p align="center"><i>Open to full-stack opportunities — let's build something.</i></p>
